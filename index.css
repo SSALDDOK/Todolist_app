@@ -1,0 +1,121 @@
+body{
+  background-color: #2B2B4C;
+}
+
+body{
+  color: #5A7BFF;
+  /*transition: color 0.5s ease-in-out;*/
+}
+
+.clicked{
+   color:#365BC1;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.form,
+.greetings{
+  display: none;
+  position: absolute;
+
+}
+
+.formDesign{
+  position: absolute;
+  top: 50%;
+  left : 35%;
+}
+
+.todoFormDesign{
+  position: absolute;
+  top: 350px;
+  left : 500px;
+  color:white;
+  font-family: "TmonMonsori";
+  font-size: 30px;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+input{
+  border: none;
+  font-size:30px;
+  background: transparent;
+  border-bottom: 1px;
+  text-align:center;
+  height:65px;
+  width:500px;
+  color: white;
+}
+
+.greetDesign{
+  position:relative;
+  font-size:50px;
+  text-align:center;
+  background-color: black;
+  width: 500px;
+  height: 50px;
+  left: 100px;
+  top: 300px;
+  color: white;
+}
+
+.showing{
+  display:  block;
+  top: 40%;
+  left : 35%;
+  font-size: 40px;
+  color:#ffffff;
+  border: none;
+}
+
+.todolocation{
+  display: none;
+  position: absolute;
+  top: 20%;
+  left : 20%;
+  font-size: 30px;
+  border: solid 1px gray;
+}
+
+.weatherlocation{
+  position: absolute;
+  font-size: 30px;
+      top: 30px;
+  font-family: "Jalnan";
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.timelocation{
+  position: absolute;
+  left : 40%;
+  font-size: 40px;
+  font-family: "Jalnan";
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.bgImage{
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  animation: fadeIn .5s linear;
+}
